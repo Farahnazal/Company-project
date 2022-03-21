@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/f9698b58be.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel=" stylesheet"  media=" screen and (max-width:768px)"href="./mobile.css">
+        <link rel="stylesheet"  href="css/mobile.css">
+       <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/utilities.css">
+
+    <title>Get in touch</title>
+</head>
+
+<body id="home">
+    <header class="hero contact ">
+        <div class="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"> <i class="fas fa-book-open"> Our &nbsp; </span>
+                Company
+                </i>
+            </h1>
+            <nav id="navbar">
+                <div class="container">
+                    <UL>
+                        <LI> <a href="./index.html">Home</a>
+                        </LI>
+                        <LI><a href="./about.html">About</a></LI>
+                        <LI><a href="./blog.html">Blog</a></LI>
+                        <LI><a href="./contact.html">Contact</a></LI>
+                    </UL>
+                </div>
+        </div>
+        <div class="content contact">
+            <p class="title">
+               Get In Touch</p> 
+               <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </header>
+    <main>
+        <section class="solutions-contact" style="text-align:center;  padding:20px;">
+            <div class="row-contact">
+                <div class="column-contact">
+                    <div class="column-contact" >
+                       <h3 style="margin-bottom:10px;" >Send Us A Message</h3>
+                       <div class="forms">
+                       <form action="/action_page.php">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br>
+                        <label for="lname">E-mail:</label><br>
+                
+                        <input type="email" id="EM" name="EM" value="Farahnaz0022@gmail.com"><br>
+                        <input type="submit" value="Submit">
+
+                      </form> </div>
+                  
+                            
+            
+                        
+            
+                    </div>
+                </div>
+                <div class="column1-contact"  ></div>
+                
+                    <div class="column2-contact "style=' '>
+                        <h2 style="margin:30px" >Contact Information</h2>
+                        <div>
+                            <i class="fas fa-map fa-2x"></i>
+                            <div>
+                         
+                                <p>Lorem ipsum, dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone fa-2x"></i>
+                            <div>
+                           
+                                <p>Lorem ipsum, dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope fa-2x"></i>
+                            <div>
+                        
+                                <p>Lorem ipsum, dolor sit amet </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer bg-dark">
+            <div class="social"> 
+        <br> <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-3x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+        </div>
+        <p>Copyright &copy 2021 </p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- this code is for navbar in roder to make it again colored and non transparent on the website  -->
+        <script>
+            const navbar= document.getElementById('navbar')
+            let scrolled=false;
+            windows.onscroll=function(){
+                if(windows.pageYoffset>100){
+                    navbar.classlist.remove(top);
+                    // if its not yet scrolled then reduce the amount of y axis by 70px,down code
+                    if(!scrolled){
+                        navbar.style.transform= 'translateY(-70px);'
+                    }
+                    setTimeout(function(){
+                        navbar.style.transform= 'translateY(0);'
+                        scrolled=true;
+                    },200);
+                }else{
+                    navbar.classlist.add(top);
+                    scrolled=false;
+                }
+            }
+        </script>
+        <script src="js/lightbox.min.js">
+        
+        </script>
+        </body>
+        </html>
+        
